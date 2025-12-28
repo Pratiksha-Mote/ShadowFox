@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Forum - Mumbai Indians Fan Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark mi-blue">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">MI Fan Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="players.html">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="biographies.html">Biographies</a></li>
+                <li class="nav-item"><a class="nav-link" href="stats.html">Stats</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link active" href="forum.html">Forum</a></li>
+                <li class="nav-item"><a class="nav-link" href="live.html">Live</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h2 class="mb-4">Fan Forum</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5>Start a Discussion</h5>
+                </div>
+                <div class="card-body">
+                    <form id="forum-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="topic-title" placeholder="Discussion Topic" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="topic-message" rows="3" placeholder="Share your thoughts..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post Discussion</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="forum-discussions"></div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h6>Forum Stats</h6>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <span>Total Discussions:</span>
+                        <span id="total-discussions">0</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Active Members:</span>
+                        <span>1,247</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
